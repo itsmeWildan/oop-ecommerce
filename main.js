@@ -1,14 +1,25 @@
+// import file javascript
 const Product = require("./product");
 const Category = require("./category");
 const Cart = require("./cart");
 const Order = require("./order");
 
-// Usage example
-const product1 = new Product(1, "Laptop", 999, "Powerful laptop");
-const product2 = new Product(2, "Smartphone", 599, "High-end smartphone");
+// Example
+const product1 = new Product(
+  1,
+  "Laptop",
+  25000000,
+  "Perfect for gaming and coding"
+);
+const product2 = new Product(
+  2,
+  "Smartphone",
+  8000000,
+  "Good for call with u boyfriend/girlfriend"
+);
 
-const category1 = new Category(101, "Electronics");
-const category2 = new Category(102, "Gadgets");
+const category1 = new Category(101, "Gadgets");
+const category2 = new Category(102, "Electronic");
 
 product1.addCategory(category1);
 product1.addCategory(category2);
